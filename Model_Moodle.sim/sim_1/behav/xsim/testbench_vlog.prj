@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../Model_Moodle.srcs/sources_1/new/FSM.sv" \
+"../../../../Model_Moodle.srcs/sources_1/new/decodor_1hot.sv" \
+"../../../../Model_Moodle.srcs/sources_1/new/door_counter.sv" \
+"../../../../Model_Moodle.srcs/sources_1/new/floor_counter.sv" \
+"../../../../Model_Moodle.srcs/sources_1/new/top.sv" \
+"../../../../Model_Moodle.srcs/sim_1/new/testbench.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
